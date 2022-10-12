@@ -1,0 +1,22 @@
+.home{
+    display: flex;
+   justify-content: center;
+   margin: 18em 0em;
+  
+
+    div{display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-content: center;
+        background-color: #cfcfcf;
+        padding: 5em 5em;
+        border-radius: 15px;
+    }
+    h1{
+        display: flex;       
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+    }
+    
+   
+    }
