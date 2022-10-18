@@ -103,7 +103,7 @@ export default function P2(){
                             setResp(
                             <div> 
                                 <p>Seu signo é de capricórnio, Não Libra</p>
-                                <img src='/image/capriconio.png'/>
+                                <img src='/image/shura_face.png'/>
                             </div>)
 
                         }                 

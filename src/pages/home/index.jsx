@@ -13,6 +13,11 @@ export default function Home(){
                  <Link to={'/p4'}>salario</Link>
                  <Link to={'/p5'}>gasolina</Link>
                  <Link to={'/p6'}>febrea</Link>
+                 <Link to={'/p7'}>Familia</Link>
+                 <Link to={'/p8'}>cine</Link>
+                 <Link to={'/p9'}>até</Link>
+                 <Link to={'/p10'}>black line</Link>
+                 <Link to={'/p11'}>tristeza</Link>
 
             </div>
         </main>
