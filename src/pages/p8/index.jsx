@@ -11,37 +11,32 @@ export default function P8(){
     const [meia,setMeia]= useState(0);
     const [dia,setDia]= useState('');
     const [brasil,setBrasil]= useState('')
-    const [resp,setResp]= useState('');
+    const [resp,setResp]= useState(0);
 
    
       
         function cine()
+       
         {
-            setInter(28,50)
-            setMeia = (14,25) 
-            let total 
-    
+
+           
             if(dia == 'quarta-feira'){
-                Msg(14.25)
+                setResp(14.25)
             }
             
             else
             { 
             
                 if(brasil == true){
-                Msg(5.00)
+                    setResp(5.00)
                 }
                 
                 else{
-
-                    if (inter + meia){
-                        Msg(total)
-                    }
+                    setResp(inter + meia)
             }
     
           
         } 
-        setResposta(` ${Msg}`);
     }
     
         return(
@@ -53,6 +48,8 @@ export default function P8(){
     
                         <h3> cinema </h3>
     
+    <h1>dia da semana
+    </h1>
                         <select value={dia} onChange={e => setDia(e.target.value)}>
                             
                             <option>Selecione</option>
@@ -66,25 +63,31 @@ export default function P8(){
                            
                         </select>
 
+<h1>é nacional</h1>
                         <select value={brasil} onChange={e => setBrasil(e.target.value)}>
                             
                             <option>Selecione</option>
-                            <option>true</option>
-                            <option>nâo</option>
+                            <option>sim</option>
+                            <option>
+                             não  
+                            </option>
                             
                            
                         </select>
-    
-                        <input type='number' placeholder="ingresso inteiro"  value={inter} onChange={e => setInter(Number(e.target.value))} />
-                        <input type='number' placeholder="ingresso meia"  value={meia} onChange={e => setMeia(Number(e.target.value))} />
-    
+                        <h1>inteiro</h1>
+                        <input type='number' placeholder='ingresso inteiro'  value={inter} onChange={e => setInter(Number(e.target.value))} />
+                        
+                        <h1>Meia</h1>
+                        <input type='number' placeholder='ingresso meia'  value={meia} onChange={e => setMeia(Number(e.target.value))} />
+     
+     <div>
+                            {resp}
+                        </div>
                         <button onClick={cine}>
                              Verificar
                         </button>
     
-                        <div>
-                            {resp}
-                        </div>
+                       
                     </div>
                     <Link to={'/'}>home</Link>
                 </section>

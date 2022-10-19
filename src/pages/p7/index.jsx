@@ -1,7 +1,7 @@
 import './index.scss';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Gif from "../../assets/yellow.gif"
+import Gif from '../../assets/images/emoji-emoji-disintegrating.gif'
 
 export default function P7(){
 
@@ -13,11 +13,13 @@ export default function P7(){
       let Msg 
 
     if (gastos > ganhos){
-      Msg = ( 
-      <div> 
-        <p></p>
-        <img src={Gif} alt="loading..." />
-    </div>)  
+      Msg = <div>
+        <h1>devendo</h1>
+        <img src={Gif} alt="loading..."/>
+      </div>
+    
+        
+
     }
 
     else if(ganhos > gastos){
@@ -26,7 +28,7 @@ export default function P7(){
 
     else{Msg = ('Orçamento comprometido,reveja seus gastos')}
  
-     setResposta(` ${Msg}`);
+     setResposta(Msg);
     
  }
  
