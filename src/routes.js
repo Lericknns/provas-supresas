@@ -12,6 +12,7 @@ import P8 from './pages/p8/index.jsx';
 import P9 from './pages/p9/index.jsx';
 import P10 from './pages/p10/index.jsx';
 import P11 from './pages/p11/index.jsx';
+import Emerald from './pages/stage/index.jsx';
 
 export default function Index(){
     return(
@@ -31,7 +32,7 @@ export default function Index(){
                 <Route path='/p9' element={<P9/>}/>
                 <Route path='/p10' element={<P10/>}/>
                 <Route path='/p11' element={<P11/>}/>
-
+                <Route path='/stage' element={<Emerald/>}/>
 
             </Routes>
         </BrowserRouter>

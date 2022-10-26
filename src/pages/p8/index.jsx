@@ -16,27 +16,29 @@ export default function P8(){
    
       
         function cine()
+        
        
-        {
-
-           
-            if(dia == 'quarta-feira'){
-                setResp(14.25)
-            }
-            
-            else
-            { 
-            
-                if(brasil == true){
+        { 
+            let meia = 14.25;
+            let inter = 28.50;
+        
+            if (brasil == 'sim'){
                     setResp(5.00)
                 }
+            
+            else if (dia == 'quarta-feira'){
+                setResp(14.25)
+            }
+             
+            
+                
                 
                 else{
-                    setResp(inter + meia)
+                    setResp(inter + meia )
             }
     
           
-        } 
+         
     }
     
         return(
@@ -78,7 +80,7 @@ export default function P8(){
                         <input type='number' placeholder='ingresso inteiro'  value={inter} onChange={e => setInter(Number(e.target.value))} />
                         
                         <h1>Meia</h1>
-                        <input type='number' placeholder='ingresso meia'  value={meia} onChange={e => setMeia(Number(e.target.value))} />
+                        <input type='number' placeholder='ingresso meia'value= {meia} onChange={e => setMeia(Number(e.target.value))} />
      
      <div>
                             {resp}

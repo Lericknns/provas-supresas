@@ -18,7 +18,8 @@ export default function Home(){
                  <Link to={'/p9'}>até</Link>
                  <Link to={'/p10'}>black line</Link>
                  <Link to={'/p11'}>tristeza</Link>
-
+                 <br/>
+                 <Link to={'/stage'}> <img src='/image/sonic.png'/>   </Link>
             </div>
         </main>
     )

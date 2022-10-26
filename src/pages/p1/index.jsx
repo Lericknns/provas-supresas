@@ -27,7 +27,7 @@ export default function P1(){
        
         <main className='home'>
 
-         <div>
+         <section>
 
             <h1>
                 Total de venda Açai
@@ -57,14 +57,14 @@ export default function P1(){
 
                 <input     type='number'   value={des}  onChange={e => setdes(Number(e.target.value)) } />
                 
-                <div>
+            
                     {resp}
-                </div>
+                
 
                 <button onClick={calcularAcai}>Somar</button>
                  
                 <Link to={'/'}>home</Link>
-            </div>
+            </section>
 
         </main>
     )
