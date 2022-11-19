@@ -3,54 +3,42 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
-export default function P7(){
+export default function P9(){
 
-    const [inicio, setInicio]= useState[0];
-    const [fim,setFim]= useState[0];
-    const [resposta,setResposta]= useState(0);
-
-
-   function ate(){   
-
-    for ( let i = inicio => 0; fim<=10; i++){
-        setResposta(i)
-  
-
-
+    const [inicio,setInicio]= useState(0);
+    const [fim, setFim]= useState(0);
+    const [resp, setResp]= useState(0);
     
- }
- 
-     return(
-         <main className="home">
-             <section>
-             
-                <h1>Contar até</h1>
- 
-             <div>   
-                 <h3>começar</h3>
-                 <input type='number' value={inicio} onChange={e => setInicio(Number(e.target.value))}     />
-             
- 
-            
-                 <h3>atè</h3>
-                 <input type='number' value={fim} onChange={e => setFim(Number(e.target.value))}     />
- 
-             <div>
- 
-                 {resposta}
-             
-             </div>
-            
-             <button  onClick={ate} >Calcular</button>  
+ function contar(){
+    
+ while ( inicio <= fim ) {
+	   inicio++;
 
-             <Link to={'/'}>home</Link>
-             
- </div>
+ }
+
  
-             </section>
-             
+}
+    return(
+       
+        <main className='mouse'>
+                
+            <h1>
+                contar até
+            </h1> 
             
- 
-         </main>
-     )
- }}
+            <input type='number' placeholder='de'  value={inicio} onChange={e => setInicio(Number(e.target.value))} />
+                        
+            <input type='number' placeholder='até'  value={fim} onChange={e => setFim(Number(e.target.value))} />
+                        
+                        <div>
+
+                        {resp}
+                        
+                        </div>
+
+                <button onClick={contar}>Calcular</button>
+                <Link to={'/'}>home</Link>
+          
+        </main>
+    )
+}

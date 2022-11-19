@@ -25,7 +25,7 @@ export default function P1(){
 
     return(
        
-        <main className='home'>
+        <main className='hame'>
 
          <section>
 

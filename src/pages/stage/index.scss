@@ -1,16 +1,20 @@
 .house{
     display: flex;
+    flex-direction: column;
    justify-content: center;
-   margin: 18em 0em;
-  
+   margin: 18em 0em; 
+   background-color: #cfcfcf;
+    padding: 5em 5em;
+    border-radius: 15px;
+    width: 20em;
+    margin-left: 70vh;
 
     div{display: flex;
         flex-direction: column;
         align-self: center;
         align-content: center;
-        background-color: #cfcfcf;
-        padding: 5em 5em;
-        border-radius: 15px;
+       
+      
     }
     h1{
         display: flex;       

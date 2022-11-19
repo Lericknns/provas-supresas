@@ -1,8 +1,15 @@
-.home{
+.hame{
     display: flex;
    justify-content: center;
    margin: 18em 0em;
-  
+   justify-content: center;
+   margin: 18em 0em; 
+   background-color: #cfcfcf;
+    padding: 5em 5em;
+    border-radius: 15px;
+    width: 20em;
+    margin-left: 70vh;
+
 
     div{display: flex;
         flex-direction: column;

@@ -33,8 +33,9 @@ export default function App(){
 
 
   return (
-    <main className="h">
-      <header className="App-header">
+
+    <main className="house">
+      <section>  <header className="App-header">
         
     
           Qtd. Alunos: <input type='text' value={qtd} onChange={e => setQtd(e.target.value)} />
@@ -61,7 +62,8 @@ export default function App(){
         </div>
         
     
-      </header>
+      </header></section>
+    
       <Link to={'/'}>home</Link>
     </main>
     
